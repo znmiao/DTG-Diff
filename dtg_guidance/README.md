@@ -6,7 +6,7 @@ This toolkit implements the core methods described in the paper. Certain pieces 
 
 ---
 
-## Directory Structure
+ Directory Structure
 
 ```
  dtg_guidance/
@@ -71,13 +71,13 @@ Release & Disclosure Notes (Why some pieces are not fully public)
 
 We intentionally withhold a small subset of training infrastructure and pre‑trained artifacts in this repository to comply with:
 
-1) **Data usage agreements & privacy**: Several datasets used for validation are governed by restrictive licenses or internal data‑use policies. We therefore do not distribute certain pipeline components that encode dataset‑specific preprocessing rules beyond the public benchmarks.
+1) Data usage agreements & privacy**: Several datasets used for validation are governed by restrictive licenses or internal data‑use policies. We therefore do not distribute certain pipeline components that encode dataset‑specific preprocessing rules beyond the public benchmarks.
 
-2) **Security considerations**: The blind‑spot‑guided generation module can synthesize adversarial failure cases for safety‑critical systems. We provide the method and reproducible experiments for public benchmarks, but we do not release specialized tooling that could be misused against operational systems.
+2) Security considerations**: The blind‑spot‑guided generation module can synthesize adversarial failure cases for safety‑critical systems. We provide the method and reproducible experiments for public benchmarks, but we do not release specialized tooling that could be misused against operational systems.
 
-3) **Reproducibility audits**: All results reported in the paper were audited against internal baselines and compliance constraints. We are preparing a clean, policy‑compliant release of pre‑trained generator checkpoints and detector baselines.
+3) Reproducibility audits**: All results reported in the paper were audited against internal baselines and compliance constraints. We are preparing a clean, policy‑compliant release of pre‑trained generator checkpoints and detector baselines.
 
-**Planned release (post‑publication):**
+Planned release (post‑publication):
 - Pre‑trained DTG‑Diff generator weights (per dataset)
 - Reference detector checkpoints (CutAddPaste baseline)
 - Full training recipes and exact hyperparameter sweeps
@@ -87,12 +87,12 @@ We will update this README with download links and checksums once the release is
 
 ---
 
-## Reproducibility Tips
+ Reproducibility Tips
 - Always fix seeds for multi‑seed runs: `dtg_guidance/multi_seed.py`
 - Prefer `pipeline_full.py` for end‑to‑end reproduction
 - Report mean/std across ≥3 seeds for paper‑grade results
 
 ---
 
-## Citing
+ Citing
 If you use this toolkit, please cite the associated paper (citation text will be added after publication).
